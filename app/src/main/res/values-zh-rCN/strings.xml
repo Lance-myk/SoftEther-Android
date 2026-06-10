@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SoftEther VPN 最小客户端</string>
+    <string name="app_name_short">VPN 客户端</string>
+
+    <!-- Tab Titles -->
+    <string name="tab_home">主页</string>
+    <string name="tab_setting">设置</string>
+    <string name="tab_about">关于</string>
+
+    <!-- Home Fragment -->
+    <string name="home_hostname">服务器地址</string>
+    <string name="home_hub">虚拟 HUB 名称</string>
+    <string name="home_username">用户名</string>
+    <string name="home_password">密码</string>
+    <string name="home_password_entered">[已输入密码]</string>
+    <string name="home_connector">连接</string>
+    <string name="home_status">当前状态</string>
+    <string name="home_status_empty">[未建立连接]</string>
+
+    <!-- Setting Fragment -->
+    <string name="setting_ssl_layer">SSL 层</string>
+    <string name="setting_ssl_port">端口号</string>
+    <string name="setting_ssl_version">SSL 版本</string>
+    <string name="setting_ssl_do_select_suites">仅使用选定的加密套件</string>
+    <string name="setting_ssl_suites">选择加密套件</string>
+    <string name="setting_ssl_suites_empty">[未选择套件]</string>
+    <string name="setting_ssl_suites_count">已选择 %d 个套件</string>
+    <string name="setting_ssl_suites_single">已选择 1 个套件</string>
+    <string name="setting_ethernet_layer">以太网层</string>
+    <string name="setting_ethernet_mtu">MTU</string>
+    <string name="setting_ethernet_mac_address">MAC 地址</string>
+    <string name="setting_ethernet_mac_empty">[未分配地址]</string>
+    <string name="setting_udp_acceleration">UDP 加速</string>
+    <string name="setting_udp_enable">启用 UDP 加速</string>
+    <string name="setting_log">日志</string>
+    <string name="setting_log_save">保存日志</string>
+    <string name="setting_log_directory">选择日志目录</string>
+    <string name="setting_log_directory_empty">[未选择目录]</string>
+    <string name="setting_language">语言</string>
+    <string name="setting_language_summary">选择应用语言</string>
+
+    <!-- About Fragment -->
+    <string name="about_project_title">关于本应用</string>
+    <string name="about_project_summary">这是一个非官方的基于 SoftEther VPN 协议的开源 VPN 客户端。\n\n本应用包含部分 SoftEtherVPN 源代码，遵循 Apache License 2.0。\n\n"SoftEther" 是 SoftEther 公司的注册商标。\n\n如需更多信息，请点击以下链接访问各项目页面。</string>
+    <string name="about_link_mvc">访问本应用项目页面</string>
+    <string name="about_link_mvc_summary">github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN</string>
+    <string name="about_link_softether">访问 SoftEther VPN 项目页面</string>
+    <string name="about_link_softether_summary">github.com/SoftEtherVPN/SoftEtherVPN</string>
+
+    <!-- VPN Status -->
+    <string name="vpn_connecting">正在连接 VPN...</string>
+    <string name="vpn_disconnecting">正在断开 VPN...</string>
+    <string name="vpn_permission_denied">VPN 权限被拒绝。无法连接。</string>
+    <string name="vpn_connected">VPN 已连接</string>
+    <string name="vpn_disconnected">VPN 已断开</string>
+    <string name="vpn_error">VPN 连接错误: %s</string>
+
+    <!-- Network Test -->
+    <string name="network_test_title">网络测试</string>
+    <string name="network_test_button">测试连接</string>
+    <string name="network_test_summary">点击测试 VPN 是否正常工作</string>
+    <string name="network_test_testing">正在测试...</string>
+    <string name="network_test_success">VPN 已连接! IP: %s</string>
+    <string name="network_test_failed">VPN 未连接</string>
+    <string name="network_test_error">测试错误: %s</string>
+
+    <!-- Common -->
+    <string name="no_value_entered">[未输入值]</string>
+    <string name="language_english">English</string>
+    <string name="language_chinese">中文</string>
+</resources>

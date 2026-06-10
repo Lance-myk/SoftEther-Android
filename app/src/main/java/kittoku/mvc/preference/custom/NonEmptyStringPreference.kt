@@ -1,0 +1,78 @@
+package kittoku.mvc.preference.custom
+
+import kittoku.mvc.R
+import android.content.Context
+import android.text.InputType
+import android.util.AttributeSet
+import androidx.preference.EditTextPreference
+import androidx.preference.Preference
+import kittoku.mvc.preference.MvcPreference
+import kittoku.mvc.preference.accessor.getStringPrefValue
+
+
+internal abstract class NonEmptyStringPreference(context: Context, attrs: AttributeSet) : EditTextPreference(context, attrs) {
+    abstract val mvcPreference: MvcPreference
+    abstract val preferenceTitle: String
+    open val emptyNotice = context.getString(R.string.no_value_entered)
+    open val textType = InputType.TYPE_CLASS_TEXT
+    open val provider = SummaryProvider<Preference> {
+        val currentValue = getStringPrefValue(mvcPreference, it.sharedPreferences!!)
+
+        if (currentValue.isEmpty()) {
+            emptyNotice
+        } else {
+            currentValue
+        }
+    }
+
+    override fun onAttached() {
+        super.onAttached()
+
+        title = preferenceTitle
+        summaryProvider = provider
+
+        setOnBindEditTextListener { editText ->
+            editText.inputType = textType
+        }
+    }
+}
+
+internal class HomeHostnamePreference(context: Context, attrs: AttributeSet) : NonEmptyStringPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.HOME_HOSTNAME
+    override val preferenceTitle = context.getString(R.string.home_hostname)
+}
+
+internal class HomeUsernamePreference(context: Context, attrs: AttributeSet) : NonEmptyStringPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.HOME_USERNAME
+    override val preferenceTitle = context.getString(R.string.home_username)
+}
+
+internal class HomePasswordPreference(context: Context, attrs: AttributeSet) : NonEmptyStringPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.HOME_PASSWORD
+    override val preferenceTitle = context.getString(R.string.home_password)
+    override val textType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+
+    override val provider = SummaryProvider<Preference> {
+        val currentValue = getStringPrefValue(mvcPreference, it.sharedPreferences!!)
+
+        if (currentValue.isEmpty()) {
+            emptyNotice
+        } else {
+            context.getString(R.string.home_password_entered)
+        }
+    }
+}
+
+internal class HomeHubPreference(context: Context, attrs: AttributeSet) : NonEmptyStringPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.HOME_HUB
+    override val preferenceTitle = context.getString(R.string.home_hub)
+    override val emptyNotice = "VPN"
+
+    override fun onAttached() {
+        super.onAttached()
+
+        if (!sharedPreferences!!.contains(mvcPreference.name)) {
+            text = "VPN"
+        }
+    }
+}

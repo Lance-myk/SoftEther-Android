@@ -1,0 +1,22 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    "kotlin.languageServer.enabled": true,
+    "kotlin.debugAdapter.enabled": true,
+    "gradle.nestedProjects": true,
+    "gradle.javaDebug": {
+        "clean": true
+    },
+    "android.sdkPath": "C:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk",
+    "java.home": "C:\\Program Files\\Android\\Android Studio\\jbr",
+    "files.exclude": {
+        "**/.gradle": true,
+        "**/build": true,
+        "**/.idea": true
+    },
+    "search.exclude": {
+        "**/build": true,
+        "**/.gradle": true
+    }
+}

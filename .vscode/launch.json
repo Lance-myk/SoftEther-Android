@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Android App (Debug)",
+            "type": "android",
+            "request": "launch",
+            "appId": "kittoku.mvc",
+            "apkPath": "${workspaceFolder}/app/build/outputs/apk/debug/app-debug.apk",
+            "device": "${command:PickAndroidDevice}",
+            "preLaunchTask": "Build Android Debug APK"
+        },
+        {
+            "name": "Android App (Attach)",
+            "type": "android",
+            "request": "attach",
+            "appId": "kittoku.mvc",
+            "device": "${command:PickAndroidDevice}"
+        },
+        {
+            "name": "Java: Launch Program",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "name": "Java: Attach to Process",
+            "type": "java",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005
+        }
+    ]
+}

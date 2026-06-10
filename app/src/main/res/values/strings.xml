@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minimum VPN Client for SoftEther VPN</string>
+    <string name="app_name_short">Minimum VPN Client</string>
+
+    <!-- Tab Titles -->
+    <string name="tab_home">HOME</string>
+    <string name="tab_setting">SETTING</string>
+    <string name="tab_about">ABOUT</string>
+
+    <!-- Home Fragment -->
+    <string name="home_hostname">Hostname</string>
+    <string name="home_hub">Virtual HUB Name</string>
+    <string name="home_username">Username</string>
+    <string name="home_password">Password</string>
+    <string name="home_password_entered">[Password Entered]</string>
+    <string name="home_connector">Connect</string>
+    <string name="home_status">Current Status</string>
+    <string name="home_status_empty">[No Connection Established]</string>
+
+    <!-- Setting Fragment -->
+    <string name="setting_ssl_layer">SSL Layer</string>
+    <string name="setting_ssl_port">Port Number</string>
+    <string name="setting_ssl_version">SSL Version</string>
+    <string name="setting_ssl_do_select_suites">Enable Only Selected Cipher Suites</string>
+    <string name="setting_ssl_suites">Select Cipher Suites</string>
+    <string name="setting_ssl_suites_empty">[No Suite Entered]</string>
+    <string name="setting_ssl_suites_count">%d Suites Selected</string>
+    <string name="setting_ssl_suites_single">1 Suite Selected</string>
+    <string name="setting_ethernet_layer">Ethernet Layer</string>
+    <string name="setting_ethernet_mtu">MTU</string>
+    <string name="setting_ethernet_mac_address">MAC Address</string>
+    <string name="setting_ethernet_mac_empty">[No Address Assigned]</string>
+    <string name="setting_udp_acceleration">UDP Acceleration</string>
+    <string name="setting_udp_enable">Enable UDP Acceleration</string>
+    <string name="setting_log">Log</string>
+    <string name="setting_log_save">Save Log</string>
+    <string name="setting_log_directory">Select Log Directory</string>
+    <string name="setting_log_directory_empty">[No Directory Selected]</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_language_summary">Select application language</string>
+
+    <!-- About Fragment -->
+    <string name="about_project_title">About This App</string>
+    <string name="about_project_summary">This is an unofficial open-source SoftEther-VPN-protocol-based VPN client.\n\nThis app includes part of SoftEtherVPN source code which is under Apache License 2.0.\n\n"SoftEther" is a registered trademark of SoftEther Corporation.\n\nIf you need more information, please move to each project page from the following links.</string>
+    <string name="about_link_mvc">Move to this app\'s project page</string>
+    <string name="about_link_mvc_summary">github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN</string>
+    <string name="about_link_softether">Move to SoftEther VPN project page</string>
+    <string name="about_link_softether_summary">github.com/SoftEtherVPN/SoftEtherVPN</string>
+
+    <!-- VPN Status -->
+    <string name="vpn_connecting">Connecting to VPN...</string>
+    <string name="vpn_disconnecting">Disconnecting from VPN...</string>
+    <string name="vpn_permission_denied">VPN permission denied. Cannot connect.</string>
+    <string name="vpn_connected">VPN Connected</string>
+    <string name="vpn_disconnected">VPN Disconnected</string>
+    <string name="vpn_error">VPN Connection Error: %s</string>
+
+    <!-- Network Test -->
+    <string name="network_test_title">Network Test</string>
+    <string name="network_test_button">Test Connection</string>
+    <string name="network_test_summary">Tap to test if VPN is working</string>
+    <string name="network_test_testing">Testing...</string>
+    <string name="network_test_success">VPN Connected! IP: %s</string>
+    <string name="network_test_failed">VPN Not Connected</string>
+    <string name="network_test_error">Test Error: %s</string>
+    <string name="no_value_entered">[No Value Entered]</string>
+    <string name="language_english">English</string>
+    <string name="language_chinese">中文</string>
+</resources>

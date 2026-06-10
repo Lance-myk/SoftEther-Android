@@ -1,0 +1,51 @@
+package kittoku.mvc.preference.custom
+
+import kittoku.mvc.R
+import android.content.Context
+import android.content.Intent
+import android.util.AttributeSet
+import android.widget.TextView
+import androidx.preference.Preference
+import androidx.preference.PreferenceViewHolder
+import kittoku.mvc.preference.MvcPreference
+import androidx.core.net.toUri
+
+
+internal abstract class LinkPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs) {
+    abstract val mvcPreference: MvcPreference
+    abstract val preferenceTitle: String
+    abstract val preferenceSummary: String
+    abstract val url: String
+
+    override fun onAttached() {
+        super.onAttached()
+
+        title = preferenceTitle
+        summary = preferenceSummary
+        intent = Intent(Intent.ACTION_VIEW).also { it.data = url.toUri() }
+        isIconSpaceReserved = false
+    }
+
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
+        super.onBindViewHolder(holder)
+
+        holder.findViewById(android.R.id.summary)?.also {
+            it as TextView
+            it.maxLines = Int.MAX_VALUE
+        }
+    }
+}
+
+internal class AboutLinkMvc(context: Context, attrs: AttributeSet) : LinkPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.ABOUT_LINK_MVC
+    override val preferenceTitle = context.getString(R.string.about_link_mvc)
+    override val preferenceSummary = context.getString(R.string.about_link_mvc_summary)
+    override val url = "https://github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN"
+}
+
+internal class AboutLinkSoftEther(context: Context, attrs: AttributeSet) : LinkPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.ABOUT_LINK_SOFTETHER
+    override val preferenceTitle = context.getString(R.string.about_link_softether)
+    override val preferenceSummary = context.getString(R.string.about_link_softether_summary)
+    override val url = "https://github.com/SoftEtherVPN/SoftEtherVPN"
+}

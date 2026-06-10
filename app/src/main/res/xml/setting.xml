@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_language">
+        <kittoku.mvc.preference.custom.LanguagePreference android:key="APP_LANGUAGE"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_ssl_layer">
+        <kittoku.mvc.preference.custom.SslPortPreference android:key="SSL_PORT"/>
+        <kittoku.mvc.preference.custom.SslVersionPreference android:key="SSL_VERSION"/>
+        <kittoku.mvc.preference.custom.SslDoSelectSuitesPreference android:key="SSL_DO_SELECT_SUITES"/>
+        <kittoku.mvc.preference.custom.SslSuitesPreference android:key="SSL_SUITES"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_ethernet_layer">
+        <kittoku.mvc.preference.custom.EthernetMTUPreference android:key="ETHERNET_MTU"/>
+        <kittoku.mvc.preference.custom.EthernetMacAddressPreference android:key="ETHERNET_MAC_ADDRESS"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_udp_acceleration">
+        <kittoku.mvc.preference.custom.UDPEnableAcceleration android:key="UDP_ENABLE_ACCELERATION"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_log">
+        <kittoku.mvc.preference.custom.LogDoSaveLogPreference android:key="LOG_DO_SAVE_LOG"/>
+        <kittoku.mvc.preference.custom.LogDirectoryPreference android:key="LOG_DIRECTORY"/>
+    </PreferenceCategory>
+</PreferenceScreen>
