@@ -14,6 +14,11 @@
 
 - **使用定位**：相较于 L2TP、OpenVPN、SSTP 等主流协议，本应用通用场景无功能优势，仅针对性优化 VPN Azure \+ UDP 加速场景
 
+#### 🔗 相关项目页面
+
+- 访问本应用老版本项目页面：[Minimum-VPN-Client-for-SoftEther-VPN](https://github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN)
+- 访问 SoftEther VPN 项目页面：[SoftEtherVPN](https://github.com/SoftEtherVPN/SoftEtherVPN)
+
 ## 💡 项目理念（轻量定义）
 
 本项目核心目标：解决 Android 设备通过 **VPN Azure** 建立**UDP加速VPN连接**的需求，摒弃多余功能，仅保留核心连通能力，实现极致轻量化运行。
