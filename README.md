@@ -1,31 +1,83 @@
-# Minimum VPN Client for SoftEther VPN <img src="images/icon.png" height="40">
-This is an open-source SoftEther-VPN-protocol-based VPN client for Android
+# 轻量版 SoftEther VPN 客户端
 
-## Notice
-* "SoftEther" is a registered trademark of SoftEther Corporation
-* This is an **unofficial** project. Don't ask about this app in the official forum or repository
-* Currently there is **no advantage** of using this app, compared with other protocols like L2TP, OpenVPN or SSTP (see Limitation)
+**一款极简、轻量、专注 VPN Azure 协议的开源 Android 客户端**
 
-## What *Minimum* means?
-I want to establish a VPN connection via [VPN Azure](http://www.vpnazure.net/en/)
-with UDP acceleration enabled from Android. So this app's goal is to implement minimum features to do that.
+本应用基于 SoftEther VPN 协议开发，主打轻量化部署，专为 Android 设备适配 VPN Azure 云端加速连接场景，无冗余功能，运行高效轻便。
 
-## Limitation
-You need to satisfy the following conditions to use this app.
-* DHCP(SecureNAT) is enabled
-* Password authentication is enabled
+---
 
-## Milestones
-- [x] works with a global-IP-address-assigned server
-- [x] works with VPN azure
-- [x] works with a global-IP-address-assigned server + UDP acceleration
-- [x] works with VPN azure + UDP acceleration
+## ⚠️ 重要声明
 
-(Not confirmed in a situation where both a server and a client are inside LAN. Reports are welcome!)
+- **商标说明**：`SoftEther` 为 SoftEther Corporation 注册商标
 
-## Installation
-You can download the latest version APK
-[here](https://github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN/releases).
+- **非官方项目**：本项目为个人开源自制版本，**请勿在 SoftEther 官方论坛、仓库咨询本应用相关问题**
 
-## Screenshots
-<img src="images/example_home.png" width=25%> <img src="images/example_setting.png" width=25%>
+- **使用定位**：相较于 L2TP、OpenVPN、SSTP 等主流协议，本应用通用场景无功能优势，仅针对性优化 VPN Azure \+ UDP 加速场景
+
+## 💡 项目理念（轻量定义）
+
+本项目核心目标：解决 Android 设备通过 **VPN Azure** 建立**UDP加速VPN连接**的需求，摒弃多余功能，仅保留核心连通能力，实现极致轻量化运行。
+
+*VPN Azure 简介*：日本筑波大学 SoftEther 项目推出的免费云端 VPN 服务，无需公网 IP、无需防火墙/NAT 端口映射、无需管理员权限，可穿透内网防火墙，快速搭建居家/办公专属虚拟专网。
+
+## 🔧 使用前置条件
+
+使用本客户端建立连接，需确保服务端满足以下配置：
+
+- ✅ 开启 DHCP（SecureNAT）虚拟网络服务
+
+- ✅ 启用账号密码认证方式
+
+## 📥 安装下载
+
+可自行编译源码获取最新 APK 安装包。
+
+## 📱 界面预览
+
+---
+
+## 📝 项目迭代更新日志
+
+### ✨ 新增功能
+
+- **多语言国际化**：全新支持中英文双语自由切换
+
+- **可视化语言入口**：在应用设置页面新增独立语言选择按钮，操作便捷
+
+- **全量中文本地化**：完成应用所有界面、功能文本的完整中文翻译，适配国内用户使用习惯
+
+### 🐛 问题修复
+
+- **修复连接超时问题**：优化 TCP 连接超时阈值，由原 10ms 调整为 30s，解决短连接超时失败问题
+
+- **新增证书兼容机制**：添加信任所有证书功能（仅用于开发、测试场景）
+
+- **修复网络配置异常**：优化修复 `network_security_config.xml` 网络安全配置文件问题
+
+- **修复状态刷新异常**：解决 VPN 断开连接后，界面状态不实时刷新的 bug
+
+### ⚡ 代码优化升级
+
+- **编译环境升级**：项目 Java 版本从 Java 8 升级至 Java 17，适配新版编译特性
+
+- **废弃 API 适配**：修复 `stopForeground` 等系统废弃接口，兼容高版本 Android 系统
+
+- **代码规范优化**：修复可空（Nullable）String 类型隐患，提升项目类型安全性与稳定性
+
+### 💖 支持我
+
+如果您觉得这个项目整理的资料对您有帮助，欢迎扫描下方二维码进行捐赠！
+
+**捐赠二维码（支付宝）**
+
+<p align="left">
+    <img src="img/1.png" alt="支付宝捐赠二维码" width="20%"/
+</p>
+
+❤️ 随心捐赠、无关金额，万分感谢每一位支持者！
+
+---
+
+**开源声明**：本项目基于开源协议分发，仅供学习、开发、测试使用，请勿用于非法网络场景。
+
+> 
