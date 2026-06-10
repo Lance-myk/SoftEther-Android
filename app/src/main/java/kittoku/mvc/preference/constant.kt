@@ -19,6 +19,7 @@ internal enum class MvcPreference {
     LOG_DO_SAVE_LOG,
     LOG_DIRECTORY,
     ABOUT_PROJECT,
+    ABOUT_LINK_MVC1,
     ABOUT_LINK_MVC,
     ABOUT_LINK_SOFTETHER,
 }

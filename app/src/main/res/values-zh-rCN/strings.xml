@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SoftEther VPN 最小客户端</string>
-    <string name="app_name_short">VPN 客户端</string>
+    <string name="app_name">SoftEther VPN</string>
+    <string name="app_name_short">SoftEther VPN</string>
 
     <!-- Tab Titles -->
     <string name="tab_home">主页</string>
@@ -43,7 +43,9 @@
     <!-- About Fragment -->
     <string name="about_project_title">关于本应用</string>
     <string name="about_project_summary">这是一个非官方的基于 SoftEther VPN 协议的开源 VPN 客户端。\n\n本应用包含部分 SoftEtherVPN 源代码，遵循 Apache License 2.0。\n\n"SoftEther" 是 SoftEther 公司的注册商标。\n\n如需更多信息，请点击以下链接访问各项目页面。</string>
-    <string name="about_link_mvc">访问本应用项目页面</string>
+    <string name="about_link_mvc1">访问本应用项目页面</string>
+    <string name="about_link_mvc_summary1">github.com/Lance-myk/SoftEther-Android</string>
+    <string name="about_link_mvc">访问本应用老版本项目页面</string>
     <string name="about_link_mvc_summary">github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN</string>
     <string name="about_link_softether">访问 SoftEther VPN 项目页面</string>
     <string name="about_link_softether_summary">github.com/SoftEtherVPN/SoftEtherVPN</string>
@@ -56,14 +58,6 @@
     <string name="vpn_disconnected">VPN 已断开</string>
     <string name="vpn_error">VPN 连接错误: %s</string>
 
-    <!-- Network Test -->
-    <string name="network_test_title">网络测试</string>
-    <string name="network_test_button">测试连接</string>
-    <string name="network_test_summary">点击测试 VPN 是否正常工作</string>
-    <string name="network_test_testing">正在测试...</string>
-    <string name="network_test_success">VPN 已连接! IP: %s</string>
-    <string name="network_test_failed">VPN 未连接</string>
-    <string name="network_test_error">测试错误: %s</string>
 
     <!-- Common -->
     <string name="no_value_entered">[未输入值]</string>

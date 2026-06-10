@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Minimum VPN Client for SoftEther VPN</string>
-    <string name="app_name_short">Minimum VPN Client</string>
+    <string name="app_name">SoftEther VPN</string>
+    <string name="app_name_short">SoftEther VPN</string>
 
     <!-- Tab Titles -->
     <string name="tab_home">HOME</string>
@@ -43,7 +43,9 @@
     <!-- About Fragment -->
     <string name="about_project_title">About This App</string>
     <string name="about_project_summary">This is an unofficial open-source SoftEther-VPN-protocol-based VPN client.\n\nThis app includes part of SoftEtherVPN source code which is under Apache License 2.0.\n\n"SoftEther" is a registered trademark of SoftEther Corporation.\n\nIf you need more information, please move to each project page from the following links.</string>
-    <string name="about_link_mvc">Move to this app\'s project page</string>
+    <string name="about_link_mvc1">Move to this app\'s project page</string>
+    <string name="about_link_mvc_summary1">github.com/Lance-myk/SoftEther-Android</string>
+    <string name="about_link_mvc">Move to this app\'s Older versions project page</string>
     <string name="about_link_mvc_summary">github.com/kittoku/Minimum-VPN-Client-for-SoftEther-VPN</string>
     <string name="about_link_softether">Move to SoftEther VPN project page</string>
     <string name="about_link_softether_summary">github.com/SoftEtherVPN/SoftEtherVPN</string>
@@ -56,14 +58,7 @@
     <string name="vpn_disconnected">VPN Disconnected</string>
     <string name="vpn_error">VPN Connection Error: %s</string>
 
-    <!-- Network Test -->
-    <string name="network_test_title">Network Test</string>
-    <string name="network_test_button">Test Connection</string>
-    <string name="network_test_summary">Tap to test if VPN is working</string>
-    <string name="network_test_testing">Testing...</string>
-    <string name="network_test_success">VPN Connected! IP: %s</string>
-    <string name="network_test_failed">VPN Not Connected</string>
-    <string name="network_test_error">Test Error: %s</string>
+
     <string name="no_value_entered">[No Value Entered]</string>
     <string name="language_english">English</string>
     <string name="language_chinese">中文</string>

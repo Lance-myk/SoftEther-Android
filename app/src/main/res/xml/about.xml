@@ -5,6 +5,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory>
+        <kittoku.mvc.preference.custom.AboutLinkMvc1 android:key="ABOUT_LINK_MVC1"/>
         <kittoku.mvc.preference.custom.AboutLinkMvc android:key="ABOUT_LINK_MVC"/>
         <kittoku.mvc.preference.custom.AboutLinkSoftEther android:key="ABOUT_LINK_SOFTETHER"/>
     </PreferenceCategory>

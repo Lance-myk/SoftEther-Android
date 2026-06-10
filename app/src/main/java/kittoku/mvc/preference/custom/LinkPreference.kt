@@ -36,6 +36,13 @@ internal abstract class LinkPreference(context: Context, attrs: AttributeSet) : 
     }
 }
 
+internal class AboutLinkMvc1(context: Context, attrs: AttributeSet) : LinkPreference(context, attrs) {
+    override val mvcPreference = MvcPreference.ABOUT_LINK_MVC1
+    override val preferenceTitle = context.getString(R.string.about_link_mvc1)
+    override val preferenceSummary = context.getString(R.string.about_link_mvc_summary1)
+    override val url = "https://github.com/Lance-myk/SoftEther-Android"
+}
+
 internal class AboutLinkMvc(context: Context, attrs: AttributeSet) : LinkPreference(context, attrs) {
     override val mvcPreference = MvcPreference.ABOUT_LINK_MVC
     override val preferenceTitle = context.getString(R.string.about_link_mvc)
