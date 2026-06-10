@@ -12,7 +12,7 @@
 
 - **非官方项目**：本项目为个人开源自制版本，**请勿在 SoftEther 官方论坛、仓库咨询本应用相关问题**
 
-- **使用定位**：相较于 L2TP、OpenVPN、SSTP 等主流协议，本应用通用场景无功能优势，仅针对性优化 VPN Azure \+ UDP 加速场景
+- **使用定位**：相较于 L2TP、OpenVPN、SSTP 等主流协议，本应用通用场景无功能优势
 
 #### 🔗 相关项目页面
 
@@ -38,6 +38,14 @@
 可自行编译源码获取最新 APK 安装包。
 
 ## 📱 界面预览
+
+<p align="left">
+    <img src="img/example_home.png" width="20%"/
+</p>
+
+<p align="left">
+    <img src="img/example_setting.png"  width="20%"/
+</p>
 
 ---
 
