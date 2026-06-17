@@ -40,11 +40,11 @@
 ## 📱 界面预览
 
 <p align="left">
-    <img src="img/example_home.png" width="20%"/
+    <img src="img/example_home.png" width="30%"/>
 </p>
 
 <p align="left">
-    <img src="img/example_setting.png"  width="20%"/
+    <img src="img/example_setting.png"  width="30%"/>
 </p>
 
 ---
@@ -84,7 +84,7 @@
 **捐赠二维码（微信）**
 
 <p align="left">
-    <img src="img/1.png" alt="微信赞赏码" width="20%"/
+    <img src="img/1.png" alt="微信赞赏码" width="30%"/>
 </p>
 
 ❤️ 随心捐赠、无关金额，万分感谢每一位支持者！
